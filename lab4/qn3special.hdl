@@ -1,4 +1,4 @@
-CHIP qn3special
+CHIP qn3special // used in cla for creating higher carry terms
 {
     IN p3,p2,p1, q3, q2, q1 , q0;
     OUT out;
