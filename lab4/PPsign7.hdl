@@ -2,14 +2,14 @@ CHIP PPsign7
 {
     IN a[8], b ;
 
-    OUT pp[16];
+    OUT pp;
 
     PARTS:
 
     And(a=a[0], b=b, out=temp7);
     And(a=a[1], b=b, out=temp8);
     And(a=a[2], b=b, out=temp9);
-    And(a=a[3], b=b, out=temp1]);
+    And(a=a[3], b=b, out=temp10);
     And(a=a[4], b=b, out=temp11);
     And(a=a[5], b=b, out=temp12);
     And(a=a[6], b=b, out=temp13);
@@ -39,23 +39,24 @@ CHIP PPsign7
     Xor(a=temp12, b=b, out=x12);
     Xor(a=temp13, b=b, out=x13);
     Xor(a=temp14, b=b, out=x14);
+    Xor(a=temp15, b=b, out=x15);
     
     HalfAdder(a=x0, b=b, sum=pp[0], carry=c1);
-    HalfAdder(a=x1, b=b, sum=pp[1], carry=c2);
-    HalfAdder(a=x2, b=b, sum=pp[2], carry=c3);
-    HalfAdder(a=x3, b=b, sum=pp[3], carry=c4);
-    HalfAdder(a=x4, b=b, sum=pp[4], carry=c5);
-    HalfAdder(a=x5, b=b, sum=pp[5], carry=c6);
-    HalfAdder(a=x6, b=b, sum=pp[6], carry=c7);
-    HalfAdder(a=x7, b=b, sum=pp[7], carry=c8);
-    HalfAdder(a=x8, b=b, sum=pp[8], carry=c9);
-    HalfAdder(a=x9, b=b, sum=pp[9], carry=c10);
-    HalfAdder(a=x10, b=b, sum=pp[10], carry=c11);
-    HalfAdder(a=x11, b=b, sum=pp[11], carry=c12);
-    HalfAdder(a=x12, b=b, sum=pp[12], carry=c13);
-    HalfAdder(a=x13, b=b, sum=pp[13], carry=c14);
-    HalfAdder(a=x14, b=b, sum=pp[14], carry=c15);
-    HalfAdder(a=x15, b=b, sum=pp[15], carry=c16);
+    HalfAdder(a=x1, b=c1, sum=pp[1], carry=c2);
+    HalfAdder(a=x2, b=c2, sum=pp[2], carry=c3);
+    HalfAdder(a=x3, b=c3, sum=pp[3], carry=c4);
+    HalfAdder(a=x4, b=c4, sum=pp[4], carry=c5);
+    HalfAdder(a=x5, b=c5, sum=pp[5], carry=c6);
+    HalfAdder(a=x6, b=c6, sum=pp[6], carry=c7);
+    HalfAdder(a=x7, b=c7, sum=pp[7], carry=c8);
+    HalfAdder(a=x8, b=c8, sum=pp[8], carry=c9);
+    HalfAdder(a=x9, b=c9, sum=pp[9], carry=c10);
+    HalfAdder(a=x10, b=c10, sum=pp[10], carry=c11);
+    HalfAdder(a=x11, b=c11, sum=pp[11], carry=c12);
+    HalfAdder(a=x12, b=c12, sum=pp[12], carry=c13);
+    HalfAdder(a=x13, b=c13, sum=pp[13], carry=c14);
+    HalfAdder(a=x14, b=c14, sum=pp[14], carry=c15);
+    HalfAdder(a=x15, b=c15, sum=pp[15], carry=c16);
         
     
 }
