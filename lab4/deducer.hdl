@@ -1,4 +1,4 @@
-CHIP deducer
+CHIP deducer  // 3-2 dedeucer
 {
     IN a[16] , b[16] , c[16];
     OUT s[16] , d[16];  // d[16] denotes the carry from 3-2 deducer
