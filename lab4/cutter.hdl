@@ -4,7 +4,9 @@ CHIP cutter
     OUT b[8], ofTemp;
 
     PARTS:
+    
 
+    // producing 8 bit answer value from given 16 bit bus
     And(a=a[0], b=true, out=b[0]);
     And(a=a[1], b=true, out=b[1]);
     And(a=a[2], b=true, out=b[2]);
@@ -13,7 +15,8 @@ CHIP cutter
     And(a=a[5], b=true, out=b[5]);
     And(a=a[6], b=true, out=b[6]);
     And(a=a[7], b=true, out=b[7]);
-    
+     
+    // finding OR of Pn-1, Pn ...P2n-1
     Or(a=a[8], b=a[9], out=c0);
     Or(a=a[10], b=a[11], out=c1);
     Or(a=a[12], b=a[13], out=c2);
