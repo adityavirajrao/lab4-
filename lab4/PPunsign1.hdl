@@ -4,7 +4,8 @@ CHIP PPunsign1
     OUT pp[16];
 
     PARTS:
-
+    
+    // producing partial product of x and y[1]
     And(a=a[0], b=b, out=pp[1]);
     And(a=a[1], b=b, out=pp[2]);
     And(a=a[2], b=b, out=pp[3]);
