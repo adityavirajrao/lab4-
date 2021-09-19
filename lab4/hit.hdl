@@ -1,4 +1,4 @@
-CHIP hit
+CHIP hit // gives AND of 4 bits
 {
     IN a,b,c,d;
     OUT out;
