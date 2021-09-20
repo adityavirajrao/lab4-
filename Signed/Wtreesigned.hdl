@@ -7,14 +7,14 @@ CHIP Wtreesigned
     PARTS:
     
     //generating partial products - Lvl 0
-    PPunsign0(a=a , b= b[0] , pp = pp0);  // generating PP0 is similar for unsigned so used the same function
-    PPunsign1(a=a , b= b[1] , pp = pp1);  // generating PP1 is similar for unsigned so used the same function
-    PPunsign2(a=a , b= b[2] , pp = pp2);  // generating PP2 is similar for unsigned so used the same function
-    PPunsign3(a=a , b= b[3] , pp = pp3);  // generating PP3 is similar for unsigned so used the same function
-    PPunsign4(a=a , b= b[4] , pp = pp4);  // generating PP4 is similar for unsigned so used the same function
-    PPunsign5(a=a , b= b[5] , pp = pp5);  // generating PP5 is similar for unsigned so used the same function
-    PPunsign6(a=a , b= b[6] , pp = pp6);  // generating PP6 is similar for unsigned so used the same function
-    PPsign7(a=a , b= b[7] , pp = pp7);    // the igned integer multiplication sing wallace tree differs from unsigned in generating PP7 to produce appropriate bus to also take into acount the negative numbers
+    PPsign0(a=a , b= b[0] , pp = pp0);  // 
+    PPsign1(a=a , b= b[1] , pp = pp1);  // 
+    PPsign2(a=a , b= b[2] , pp = pp2);  // 
+    PPsign3(a=a , b= b[3] , pp = pp3);  // 
+    PPsign4(a=a , b= b[4] , pp = pp4);  // 
+    PPsign5(a=a , b= b[5] , pp = pp5);  // 
+    PPsign6(a=a , b= b[6] , pp = pp6);  // 
+    PPsign7(a=a , b= b[7] , pp = pp7);    // the signed integer multiplication sing wallace tree differs from unsigned in generating PP7 to produce appropriate bus to also take into acount the negative numbers
 
     // Lvl 1
     deducer(a=pp0 , b=pp1 , c=pp2 , s=s10 , d=c10);
