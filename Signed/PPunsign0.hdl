@@ -1,4 +1,4 @@
-CHIP PPunsign0
+CHIP PPsign0
 {
     IN a[8],b;
     OUT pp[16];
@@ -14,13 +14,15 @@ CHIP PPunsign0
     And(a=a[6], b=b, out=pp[6]);
     And(a=a[7], b=b, out=pp[7]);
 
-    And(a=a[7], b=false, out=pp[8]);
-    And(a=a[7], b=false, out=pp[9]);
-    And(a=a[7], b=false, out=pp[10]);
-    And(a=a[7], b=false, out=pp[11]);
-    And(a=a[7], b=false, out=pp[12]);
-    And(a=a[7], b=false, out=pp[13]);
-    And(a=a[7], b=false, out=pp[14]);
-    And(a=a[7], b=false, out=pp[15]);
+    And(a=a[7], b=b, out=pp[8]);
+    And(a=a[7], b=b, out=pp[9]);
+    And(a=a[7], b=b, out=pp[10]);
+    And(a=a[7], b=b, out=pp[11]);
+    And(a=a[7], b=b, out=pp[12]);
+    And(a=a[7], b=b, out=pp[13]);
+    And(a=a[7], b=b, out=pp[14]);
+    And(a=a[7], b=b, out=pp[15]);
 
+    
+  
 }
